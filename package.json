@@ -1,0 +1,64 @@
+{
+  "name": "vsphere-graphql",
+  "version": "1.0.0",
+  "description": "Create a GraphQL Schema from a vSphere WSDL",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "prettier": "prettier --write 'src/**/*.js'",
+    "build": "babel src --optional runtime --ignore __tests__ --out-dir dist/ && cp package.json dist/ && cp README.md dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scratch": "babel-node src/scratch/scratch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhoriuchi/vsphere-graphql.git"
+  },
+  "keywords": [
+    "vsphere",
+    "graphql",
+    "vcenter",
+    "wsdl",
+    "soap",
+    "api"
+  ],
+  "author": "Branden Horiuchi <bhoriuchi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhoriuchi/vsphere-graphql/issues"
+  },
+  "homepage": "https://github.com/bhoriuchi/vsphere-graphql#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "node-localstorage": "^1.3.0",
+    "request": "^2.83.0",
+    "xmlbuilder": "^8.2.2",
+    "xmldom": "^0.1.27"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-plugin-syntax-async-functions": "6.13.0",
+    "babel-plugin-syntax-async-generators": "6.13.0",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-flow-strip-types": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "body-parser": "^1.18.2",
+    "chai": "4.1.1",
+    "chai-json-equal": "0.0.1",
+    "chai-spies-next": "^0.8.0",
+    "chai-subset": "1.5.0",
+    "commander": "^2.14.1",
+    "coveralls": "2.13.1",
+    "eslint": "4.4.1",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-flowtype": "2.35.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.12.0",
+    "mocha": "3.5.0",
+    "prettier": "^1.11.1"
+  }
+}
